@@ -59,7 +59,12 @@ Total CO<sub>2</sub> stored: 123123 tons.
 
 <script>
 document.getElementById("num_trees").innerHTML = get_trees().length;
-document.getElementById("co2_stored").innerHTML = calc_total_co2();
+
+function update_co2 () {
+	document.getElementById("co2_stored").innerHTML = calc_total_co2();
+	setTimeout(update_co2, 1000);
+}
+update_co2();
 </script>
 
 </html>
