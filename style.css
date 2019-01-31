@@ -70,3 +70,6 @@ td {
     margin-top: 8px;
 }
 
+a, a:visited {
+	color: black;
+}
