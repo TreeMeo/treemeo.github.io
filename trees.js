@@ -69,6 +69,10 @@ function populate_my_trees () {
 	}
 }
 
+function display_tree (i) {
+	document.location = "/tree_details.html#" + i;
+}
+
 function main () {
 	var trees = localStorage.getItem("trees");
 	if (trees == null) {
