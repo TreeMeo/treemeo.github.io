@@ -30,7 +30,6 @@ table {
 
 tr:first-child {
 	text-align: center;
-	padding-right: 20px;
 }
 
 input {
@@ -48,4 +47,9 @@ td i {
 td img {
 	height: 2rem;
 	width: auto;
+}
+
+td {
+	padding-right: 20px;
+	padding-left: 20px;
 }
