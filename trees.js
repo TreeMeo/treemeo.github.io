@@ -1,13 +1,12 @@
 
 function save_tree (tree) {
-	var trees = localStorage.getItem("trees");
+	var trees = get_trees();
 	trees.push(tree);
-	localStorage.setItem("trees", trees);
+	localStorage.setItem("trees", JSON.stringify(trees));
 }
 
 function get_trees () {
-	var trees = localStorage.getItem("trees");
-	return trees;
+	return JSON.parse(localStorage.getItem("trees"));
 }
 
 function plant_tree () {
@@ -32,7 +31,7 @@ function main () {
 
 	var trees = localStorage.getItem("trees");
 	if (trees == null) {
-		localStorage.setItem("trees", []);
+		localStorage.setItem("trees", JSON.stringify([]));
 	}
 }
 
