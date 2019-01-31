@@ -66,6 +66,7 @@ function populate_my_trees () {
 		text += "tree " + (i+1) + ": " + tree["name"];
 		text += "</a></li>";
 		list.innerHTML += text;
+		console.log(text);
 	}
 }
 
