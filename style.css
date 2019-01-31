@@ -71,5 +71,5 @@ td {
 }
 
 a, a:visited {
-	color: black;
+	color: black !important;
 }
