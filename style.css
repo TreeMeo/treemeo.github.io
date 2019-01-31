@@ -28,5 +28,8 @@ table {
 
 input {
 	width: 50%;
+}
+
+input, select {
 	margin-bottom: 20px;
 }
