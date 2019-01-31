@@ -62,9 +62,9 @@ function populate_my_trees () {
 	var trees = get_trees();
 	for (var i = 0; i < trees.length; i++) {
 		var tree = trees[i];
-		var text = "<li><a href='javascript:display_tree(" + i + ");'>";
+		var text = "<a href='javascript:display_tree(" + i + ");'>";
 		text += "tree " + (i+1) + ": " + tree["name"];
-		text += "</a></li>";
+		text += "</a><br>";
 		list.innerHTML += text;
 		console.log(text);
 	}
