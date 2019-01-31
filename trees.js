@@ -1,12 +1,14 @@
 
 function calc_co2 (tree) {
-	console.log(tree);
-	console.log(tree["planted"]);
 	var before = tree["planted"];
 	var now = new Date();
 	var seconds = (now.getTime() - before.getTime()) / 1000;
 
 	return Number(seconds * 0.2758602981).toFixed(2); // mg
+}
+
+function calc_tree_coins () {
+	return Math.round(calc_total_co2() / 10);
 }
 
 function calc_total_co2 () {
