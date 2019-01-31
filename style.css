@@ -37,3 +37,11 @@ input, select {
 	margin-bottom: 20px;
 }
 
+td i {
+	font-size: 2rem;
+}
+
+td img {
+	height: 2rem;
+	width: auto;
+}
