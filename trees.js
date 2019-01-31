@@ -6,7 +6,7 @@ function calc_co2 (tree) {
 	var now = new Date();
 	var seconds = (now.getTime() - before.getTime()) / 1000;
 
-	return Math.round(seconds * 0.2758602981); // mg
+	return Number(seconds * 0.2758602981).toFixed(2); // mg
 }
 
 function calc_total_co2 () {
