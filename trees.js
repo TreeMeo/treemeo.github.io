@@ -10,10 +10,6 @@ function get_trees () {
 	return trees;
 }
 
-// Retrieve
-document.getElementById("result").innerHTML = ;
-
-
 function plant_tree () {
 	var species = document.getElementById("species").value;
 	var height = document.getElementById("height").value;
