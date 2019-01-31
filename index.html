@@ -14,7 +14,7 @@
 
 <tr>
 	<td><a href="/trees.html">Trees</a></td>
-	<td>1</td>
+	<td><span id="num_trees">?</span></td>
 </tr>
 
 <tr>
@@ -53,5 +53,9 @@ Total CO<sub>2</sub> stored: 123123 tons.
 
 
 </body>
+
+<script>
+document.getElementById("num_trees").value = get_trees().length;
+</script>
 
 </html>
