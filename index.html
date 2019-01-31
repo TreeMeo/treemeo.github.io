@@ -29,7 +29,7 @@
 
 <tr>
 	<td>Tree coins:</td>
-	<td>????</td>
+	<td<span id="tree_coins">?</span></td>
 </tr>
 
 </table>
@@ -59,6 +59,7 @@ Total CO<sub>2</sub> stored: 123123 tons.
 
 <script>
 document.getElementById("num_trees").innerHTML = get_trees().length;
+document.getElementById("tree_coins").innerHTML = calc_tree_coins();
 
 function update_co2 () {
 	document.getElementById("co2_stored").innerHTML = calc_total_co2();
