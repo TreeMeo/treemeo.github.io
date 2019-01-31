@@ -29,6 +29,7 @@ table {
 
 tr:first-child {
 	text-align: center;
+	padding-right: 20px;
 }
 
 input {
