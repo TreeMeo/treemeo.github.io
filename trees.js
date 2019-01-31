@@ -61,17 +61,12 @@ function populate_my_trees () {
 	var list = document.getElementById("my_trees");
 	var trees = get_trees();
 	for (var i = 0; i < trees.length; i++) {
-		var tree = trees[i];
-		var item = document.createElement('li');
-		item.appendChild(document.createTextNode("tree: " + tree["name"]));
-		list.appendChild(item);
+		var text = "<li><a href='javascript:display_tree(" + i + ");'>";
+		text += "tree: " + tree["name"];
+		text += "</a></li>";
+		list.innerHTML += text;
 	}
 }
-
-
-
-
-
 
 function main () {
 	var trees = localStorage.getItem("trees");
