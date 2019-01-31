@@ -25,6 +25,7 @@ td {
 }
 
 table {
+	display: inline-block;
 }
 
 tr:first-child {
