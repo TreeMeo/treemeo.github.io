@@ -1,3 +1,7 @@
+function reset () {
+	localStorage.removeItem("trees");
+	reload();
+}
 
 function save_tree (tree) {
 	var trees = get_trees();
