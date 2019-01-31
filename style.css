@@ -27,6 +27,10 @@ td {
 table {
 }
 
+tr:first-child {
+	text-align: center;
+}
+
 input {
 	width: 50%;
 }
