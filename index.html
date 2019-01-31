@@ -64,7 +64,7 @@ document.getElementById("num_trees").innerHTML = get_trees().length;
 document.getElementById("tree_coins").innerHTML = calc_tree_coins();
 
 function update_co2 () {
-	document.getElementById("co2_stored").innerHTML = calc_total_co2();
+	document.getElementById("co2_stored").innerHTML = calc_total_co2().toFixed(2);
 	setTimeout(update_co2, 1000);
 }
 update_co2();

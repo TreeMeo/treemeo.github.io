@@ -4,7 +4,7 @@ function calc_co2 (tree) {
 	var now = new Date();
 	var seconds = (now.getTime() - before.getTime()) / 1000;
 
-	return (seconds * 0.2758602981).toFixed(2); // mg
+	return seconds * 0.2758602981; // mg
 }
 
 function calc_tree_coins () {

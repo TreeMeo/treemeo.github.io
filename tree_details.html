@@ -76,7 +76,7 @@ var age_in_days = Math.ceil(time_diff / (1000 * 3600 * 24));
 document.getElementById("age").innerHTML = age_in_days;
 
 function update_co2 () {
-	document.getElementById("co2_stored").innerHTML = calc_co2(tree);
+	document.getElementById("co2_stored").innerHTML = calc_co2(tree).toFixed(2);
 	setTimeout(update_co2, 1000);
 }
 update_co2();
