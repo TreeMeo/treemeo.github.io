@@ -1,6 +1,9 @@
 <html>
 
 <head>
+
+<script src="/trees.js"></script>
+
 </head>
 
 
@@ -11,10 +14,10 @@
 
 <h2>Plant a tree</h2>
 
-<form>
+<form onsubmit="plant_tree(); return false;">
 
 	Species: <br>
-	<select>
+	<select id="species">
 	  <option value="beech">Beech</option>
 	  <option value="oak">Oak</option>
 	  <option value="pine">Pine</option>
@@ -22,11 +25,11 @@
 	<br>
 
 	Estimated height: <br>
-	<input type="text"></input> cm.
+	<input id="height" type="text"></input> cm.
 	<br>
 
 	Name: <br>
-	<input type="text"></input>
+	<input id="name" type="text"></input>
 	<br>
 
 	<input type="submit" value="Plant" />
