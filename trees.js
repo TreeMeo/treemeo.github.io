@@ -54,7 +54,7 @@ function plant_tree () {
 
 	save_tree(tree);
 
-	location.reload();
+	window.location = "/";
 }
 
 function populate_my_trees () {
