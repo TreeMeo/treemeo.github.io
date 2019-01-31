@@ -1,8 +1,8 @@
 
 function calc_co2 (tree) {
-	var then = tree["planted"];
+	var before = tree["planted"];
 	var now = new Date();
-	var seconds = (now.getTime() - then.getTime()) / 1000;
+	var seconds = (now.getTime() - before.getTime()) / 1000;
 
 	return seconds * 0.2758602981; // mg
 }
