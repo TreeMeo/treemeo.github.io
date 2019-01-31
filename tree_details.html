@@ -64,7 +64,13 @@ var tree = trees[i];
 document.getElementById("title").innerHTML = "tree " + i + ": " + tree["name"];
 document.getElementById("species").innerHTML = tree["species"];
 document.getElementById("height").innerHTML = tree["height"];
-document.getElementById("co2_stored").innerHTML = calc_co2(tree);
+
+function update_co2 () {
+	document.getElementById("co2_stored").innerHTML = calc_co2(tree);
+	setTimeout(update_co2, 1000);
+}
+update_co2();
+
 </script>
 
 
