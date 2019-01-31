@@ -73,7 +73,7 @@ document.getElementById("height").innerHTML = tree["height"];
 
 var now = new Date();
 var time_diff = Math.abs(tree["planted"].getTime() - now.getTime());
-var age_in_days = Math.ceil(time_diff / (1000 * 3600 * 24));
+var age_in_days = Math.floor(time_diff / (1000 * 3600 * 24));
 document.getElementById("age").innerHTML = age_in_days;
 
 function update_co2 () {
