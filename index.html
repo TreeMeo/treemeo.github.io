@@ -19,17 +19,17 @@
 
 <tr>
 	<td>Your CO<sub>2</sub> stored:</td>
-	<td>1234 mg</td>
+	<td><span id="co2_stored">?</span> mg</td>
 </tr>
 
 <tr>
 	<td>Your O<sub>2</sub> emission:</td>
-	<td>1234 mg</td>
+	<td>???? mg</td>
 </tr>
 
 <tr>
 	<td>Tree coins:</td>
-	<td>5678</td>
+	<td>????</td>
 </tr>
 
 </table>
@@ -61,7 +61,8 @@ Total CO<sub>2</sub> stored: 123123 tons.
 </body>
 
 <script>
-document.getElementById("num_trees").value = get_trees().length;
+document.getElementById("num_trees").innerHTML = get_trees().length;
+document.getElementById("co2_stored").innerHTML = calc_total_co2();
 </script>
 
 </html>

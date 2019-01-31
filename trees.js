@@ -1,3 +1,22 @@
+
+function calc_co2 (tree) {
+	var then = tree["planted"];
+	var now = new Date();
+	var seconds = (now.getTime() - then.getTime()) / 1000;
+
+	return seconds * 0.2758602981; // mg
+}
+
+function calc_total_co2 () {
+	var trees = get_trees();
+	var total = 0;
+	for (var i = 0; i < trees.length; i++) {
+		var tree = trees[i];
+		total += calc_co2(tree);
+	}
+	return total;
+}
+
 function reset () {
 	localStorage.removeItem("trees");
 	reload();
@@ -21,7 +40,8 @@ function plant_tree () {
 	var tree = {
 		"species": species,
 		"height": height,
-		"name": name
+		"name": name,
+		"planted": new Date()
 	};
 
 	save_tree(tree);
