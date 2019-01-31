@@ -61,7 +61,7 @@ var i = parseInt(window.location.hash.substr(1));
 
 var trees = get_trees();
 var tree = trees[i];
-document.getElementById("title").innerHTML = tree["name"];
+document.getElementById("title").innerHTML = "tree " + i + ": " + tree["name"];
 document.getElementById("species").innerHTML = tree["species"];
 document.getElementById("height").innerHTML = tree["height"];
 document.getElementById("co2_stored").innerHTML = calc_co2(tree);
