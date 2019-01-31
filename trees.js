@@ -31,7 +31,11 @@ function save_tree (tree) {
 }
 
 function get_trees () {
-	return JSON.parse(localStorage.getItem("trees"));
+	var trees = JSON.parse(localStorage.getItem("trees"));
+	for (var i = 0; i < trees.length; i++) {
+		trees[i]["planted"] = new Date(trees[i]["planted"]);
+	}
+	return trees;
 }
 
 function plant_tree () {
