@@ -22,13 +22,11 @@ function plant_tree () {
 
 	save_tree(tree);
 
-	console.log(get_trees());
-
+	reload();
 }
 
 
 function main () {
-
 	var trees = localStorage.getItem("trees");
 	if (trees == null) {
 		localStorage.setItem("trees", JSON.stringify([]));
