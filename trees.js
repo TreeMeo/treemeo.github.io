@@ -19,7 +19,7 @@ function calc_total_co2 () {
 
 function reset () {
 	localStorage.removeItem("trees");
-	reload();
+	location.reload();
 }
 
 function save_tree (tree) {
@@ -46,7 +46,7 @@ function plant_tree () {
 
 	save_tree(tree);
 
-	reload();
+	location.reload();
 }
 
 
