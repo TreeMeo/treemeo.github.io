@@ -57,6 +57,21 @@ function plant_tree () {
 	location.reload();
 }
 
+function populate_my_trees () {
+	var list = document.getElementById("my_trees");
+	var trees = get_trees();
+	for (var i = 0; i < trees.length; i++) {
+		var tree = trees[i];
+		var item = document.createElement('li');
+		item.appendChild(document.createTextNode("tree: " + tree["name"]));
+		list.appendChild(item);
+	}
+}
+
+
+
+
+
 
 function main () {
 	var trees = localStorage.getItem("trees");
@@ -66,3 +81,4 @@ function main () {
 }
 
 main();
+
